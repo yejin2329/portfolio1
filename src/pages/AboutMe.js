@@ -19,6 +19,16 @@ const AboutMePage=()=>{
                <p>Watch Netflix</p>
                 <p>Reading mysterious book</p>
             </div>
+            <div className="sticky-note2">
+                <h2>Skills</h2>
+                <p>Javascript, HTML, CSS</p>
+                <p>Python, C, C++</p>
+                <p>SQL Developer, PostgreSQL</p>
+                <p>React</p>
+                <p>GitHub, Git</p>
+                <p>Microsoft 365</p>
+                <p>Excellent Collaboration & Communication</p>
+            </div>
             <div>
             <p>
 
