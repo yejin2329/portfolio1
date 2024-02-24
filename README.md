@@ -1,3 +1,13 @@
+# Simple MyHomepage
+
+Welcome to "Simple MyHomepage" - a stratightforward and personal homepage that showcases project I have completed. This blog is designed to serve as an interactive replacement for my traditional resume, providing a more dynamic and detailed insight into my work and capabilities.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
