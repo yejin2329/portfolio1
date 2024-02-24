@@ -72,10 +72,11 @@ html, body, #root{
   color: rgb(34, 90, 179);
 }
 
+/*
 .about{
   display:flex;
   grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-  gap:20px; /*space btw stick notes*/
+  gap:20px;
   justify-content: center;
   align-items: center;
   flex-wrap:wrap;
@@ -83,47 +84,6 @@ html, body, #root{
  
 }
 
-.sticky-note, .sticky-note2{
-  background-color:#97e5fb;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
-  border-radius: 10px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-
-.sticky-note h2, .sticky-note2 h2{
-  color: rgb(31, 98, 127);
-  width:100%;
-  text-align: center;
-}
-
-.sticky-note p, .sticky-note2 p{
-  color: rgb(31, 98, 127);
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-}
-
-
-.sticky-note{
-  width: 250px;
-  height: 150px;
-}
-
-.sticky-note2{
-  width:40%;
-  margin-left:auto;
-  margin-right:auto;
-  height: 300px;
- 
- 
-}
 
 .about-page-container{
   min-height:100vh;
@@ -131,6 +91,249 @@ html, body, #root{
   padding-top:0;
   margin-top:0;
  
+}
+
+
+*/
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  min-height:80vh;
+  text-align:left;
+}
+
+.App .container{
+  justify-content:flex-start;
+}
+
+.profile {
+  margin-top:30px;
+ 
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%; /* Adjust the width as necessary */
+  max-width: 50%; /* Adjust the max-width as necessary */
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
+}
+
+.profile h1{
+  margin-left:40px;
+}
+
+.paragraph{
+  text-align:left;
+  margin-top:180px;
+  
+  font-size:18px;
+}
+
+.paragraph h3{
+  margin-left:40px;
+
+}
+
+.paragraph p{
+  font-family: 'Arial', sans-serif;
+  font-weight:normal;
+  color:grey;
+}
+.paragraph h2{
+  margin-left:80px;
+  color: rgb(78, 76, 76);
+}
+
+.skills {
+  flex-basis: 40%; /* Adjust the width as necessary */
+  max-width: 40%; /* Adjust the max-width as necessary */
+  
+}
+
+.skills-category{
+  margin-top: 190px;
+  margin-left:50px;
+}
+
+.skills-category-1{
+  margin-top:30px;
+  margin-left:50px;
+}
+
+.skills-category-1 h3{
+  font-family: 'Arial', sans-serif;
+  font-weight:normal;
+  color:darkgrey;
+}
+
+.skills-category h3{
+  font-family: 'Arial', sans-serif;
+  font-weight:normal;
+  color:darkgrey;
+}
+
+.bold{
+  font-weight:bold;
+  color:grey;
+}
+
+
+/*AboutMe Page -Education*/
+.education-section{  
+  padding: 20px;
+  min-height:30vh;
+  text-align:left;
+  margin-left: 40px;
+}
+
+.education-section h2{
+  margin-top:30px;
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
+}
+
+.education-section p{
+  display:grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  text-align:left;
+  margin-top:20px;
+
+  font-size:18px;
+}
+
+.institution{
+  display:inline-block;
+  width:300px;
+  text-align:left;
+  color:rgba(9, 48, 99, 0.682)
+}
+
+.program{
+  text-align:left;
+  color:grey;
+}
+
+.education-section h{
+  font-size:14px;
+  color:rgba(9, 48, 99, 0.682)
+}
+
+/*AboutMe Page-Course*/
+.course-container{
+  display:flex;
+  justify-content: space-between;
+}
+
+.course-section{
+  width:50%;
+  padding: 20px;
+  min-height:30vh;
+  text-align:left;
+  margin-left: 40px;
+  margin-top:50px;
+}
+
+.course-section h2{
+  margin-bottom: 30px;
+}
+
+.course-section h3{
+  margin-top:10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  color:darkgrey;
+}
+
+/*AboutMe Page-Interest*/
+.interest-container{
+  position: relative; /* Set up a relative positioning context */
+  height: 500px; /* Set a fixed height to contain the circles */
+  width: 100%; /* Full width */
+  margin-top: 90px;
+  margin-left: 70px;
+}
+
+.interest{
+  border-radius: 50%;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute; /* Positioned absolutely within interest-container */
+  background-color: #eaeaea;
+}
+
+.interest.high{
+  font-size:1em;
+  width:150px;
+  height: 150px;
+  background-color: #c8e6c9;
+}
+
+.interest.medium{
+  font-size:0.85em;
+  width: 120px; /* Medium size for medium interest */
+  height: 120px;
+}
+
+.interest.low{
+  font-size:0.7em;
+  width: 90px; /* Smaller size for low interest */
+  height: 90px;
+}
+
+.interest span {
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*AboutMe Page-timeline*/
+.timeline-container{
+  position: relative;
+  width: 100%;
+  padding: 50px 0; /* Provides vertical padding around the timeline */
+}
+
+.timeline-container h2{
+  text-align: left;
+  margin-left:40px;
+}
+
+.timeline{
+  position:absolute;
+  width:100%;
+  height:2px;
+  background: #d3d3d3; 
+  top:50%;
+  margin-top: 60px;
+}
+
+.event{
+  position: absolute;
+  bottom: -95px; /* Adjust this value as needed to lower the events below the timeline */
+  transform: translateX(-50%); 
+}
+
+.event-dot{
+  position: absolute;
+  top: -13px; /* Adjust as necessary to align with the timeline */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px; 
+  height: 10px; 
+  background: #ff2e63; 
+  border-radius: 50%; /* Makes it circular */
+  z-index: 2; /* Ensures it's above the timeline */
+}
+.event-date{
+  margin-bottom: 5px;
 }
 
 .current-date-time{
