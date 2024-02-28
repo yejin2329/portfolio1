@@ -6,8 +6,9 @@ const ContactPage=()=>{
         <div className="contact-container">
             <Link to="/" className="back-button">Back to HomePage</Link>
     <div className="contact">
-        <h1>Email Address:</h1>
-        
+        <div className="email">Email Address: kimye232917@gmail.com</div>
+        <div className="phone">2897727022</div>
+        <div className="github">https://github.com/yejin2329/portfolio1.git</div>
     </div>
     </div>
     )
