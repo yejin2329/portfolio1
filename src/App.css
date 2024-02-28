@@ -54,7 +54,7 @@ html, body, #root{
 
 .back-button{
   padding: 10px;
-  margin: 10px;
+  margin:10px;
   background-color: rgb(85, 126, 192);
   color: white;
   text-decoration: none;
@@ -63,7 +63,7 @@ html, body, #root{
   text-align: center;
   position: fixed;
   top: 20px;
-  left:50%;
+  left:85%;
   transform: translateX(-50%);
   z-index: 10;
 }
@@ -72,29 +72,6 @@ html, body, #root{
   color: rgb(34, 90, 179);
 }
 
-/*
-.about{
-  display:flex;
-  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-  gap:20px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap:wrap;
-  padding-top: 100px;
- 
-}
-
-
-.about-page-container{
-  min-height:100vh;
-  position:relative;
-  padding-top:0;
-  margin-top:0;
- 
-}
-
-
-*/
 
 .container{
   display: flex;
@@ -114,14 +91,22 @@ html, body, #root{
  
   display: flex;
   flex-direction: column;
-  flex-basis: 50%; /* Adjust the width as necessary */
-  max-width: 50%; /* Adjust the max-width as necessary */
+  flex-basis: 50%; 
+  max-width: 50%; 
   font-family: 'Arial', sans-serif;
   font-size: 25px;
 }
 
 .profile h1{
   margin-left:40px;
+  font-size: 2em;
+  margin-bottom:0.5em;
+}
+
+.profile h2{
+  margin-left:40px;
+  font-size: 1.5em;
+  margin-top:0;
 }
 
 .paragraph{
@@ -146,38 +131,42 @@ html, body, #root{
   color: rgb(78, 76, 76);
 }
 
-.skills {
-  flex-basis: 40%; /* Adjust the width as necessary */
-  max-width: 40%; /* Adjust the max-width as necessary */
-  
+.skill-container{
+  display:grid;
+  grid-template-columns: max-content auto;
+  row-gap: 30px;
+  align-items:start;
+  margin-top:250px;
+  margin-left:100px;
 }
 
-.skills-category{
-  margin-top: 190px;
-  margin-left:50px;
+.skill {
+  display:contents;
+  font-size:18px;
 }
 
-.skills-category-1{
-  margin-top:30px;
-  margin-left:50px;
-}
 
-.skills-category-1 h3{
-  font-family: 'Arial', sans-serif;
-  font-weight:normal;
-  color:darkgrey;
-}
 
-.skills-category h3{
-  font-family: 'Arial', sans-serif;
-  font-weight:normal;
-  color:darkgrey;
-}
-
-.bold{
-  font-weight:bold;
+.element{
+  text-align:left;
   color:grey;
 }
+
+
+
+.bold{
+  padding-right:30px;
+  text-align:left;
+  font-weight:bold;
+  color:darkgrey;
+}
+
+.diagonal-section {
+  background-color: #6e81aa; 
+  clip-path: polygon(0 0, 110% 70%, 100% 100%, 0 80%);
+  padding: 50px 0;
+}
+
 
 
 /*AboutMe Page -Education*/
@@ -238,6 +227,8 @@ html, body, #root{
 
 .course-section h2{
   margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
 }
 
 .course-section h3{
@@ -249,13 +240,19 @@ html, body, #root{
 
 /*AboutMe Page-Interest*/
 .interest-container{
-  position: relative; /* Set up a relative positioning context */
-  height: 500px; /* Set a fixed height to contain the circles */
+  position: relative; 
+  height: 500px; 
   width: 100%; /* Full width */
-  margin-top: 90px;
+  margin-top: 130px;
   margin-left: 70px;
 }
 
+.interest-container h2{
+  margin-top:-50px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
+}
 .interest{
   border-radius: 50%;
   overflow:hidden;
@@ -263,8 +260,9 @@ html, body, #root{
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: absolute; /* Positioned absolutely within interest-container */
+  position: absolute; 
   background-color: #eaeaea;
+  transition: transform 0.3s ease;
 }
 
 .interest.high{
@@ -274,16 +272,28 @@ html, body, #root{
   background-color: #c8e6c9;
 }
 
+.interest.high:hover{
+  transform:translateY(-12px) scale(1.2);
+}
+
 .interest.medium{
   font-size:0.85em;
-  width: 120px; /* Medium size for medium interest */
+  width: 120px; 
   height: 120px;
+}
+
+.interest.medium:hover{
+  transform:translateY(-9px) scale(1.09);
 }
 
 .interest.low{
   font-size:0.7em;
-  width: 90px; /* Smaller size for low interest */
+  width: 90px; 
   height: 90px;
+}
+
+.interest.low:hover{
+  transform: translateY(-7px) scale(1.06);
 }
 
 .interest span {
@@ -298,12 +308,15 @@ html, body, #root{
 .timeline-container{
   position: relative;
   width: 100%;
-  padding: 50px 0; /* Provides vertical padding around the timeline */
+  padding: 50px 0; 
+  
 }
 
 .timeline-container h2{
   text-align: left;
-  margin-left:40px;
+  margin-left:50px;
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
 }
 
 .timeline{
@@ -315,25 +328,106 @@ html, body, #root{
   margin-top: 60px;
 }
 
+.timeline-a{
+  margin-top: 20px;
+  min-height:10vh;
+  
+}
+
 .event{
   position: absolute;
-  bottom: -95px; /* Adjust this value as needed to lower the events below the timeline */
   transform: translateX(-50%); 
+  top:90%;
 }
 
 .event-dot{
   position: absolute;
-  top: -13px; /* Adjust as necessary to align with the timeline */
+  top:-33px; 
   left: 50%;
   transform: translateX(-50%);
   width: 10px; 
   height: 10px; 
-  background: #ff2e63; 
+  background: #5170d3; 
   border-radius: 50%; /* Makes it circular */
-  z-index: 2; /* Ensures it's above the timeline */
+  z-index: 2; 
 }
 .event-date{
   margin-bottom: 5px;
+}
+
+.event-desc{
+  margin-bottom: 40px;
+}
+
+/*Project Page-todolist*/
+.project-container{
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-card, .project-card2{
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  margin-top:25px;
+  /*Responsive grid*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card:hover{
+  transform: translateY(-5px);
+}
+
+.project-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.to-do-list h1{
+  font-family: 'Arial', sans-serif;
+  font-size: 35px;
+}
+
+.proejct-desc{
+  padding:0;
+  margin:0;
+}
+
+.project-desc h1{
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
+}
+
+.project-desc p{
+  display:grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  text-align:left;
+  margin-top:20px;
+
+  font-size:18px;
+}
+
+.project-desc h3{
+  margin-top:30px;
+  text-align:left;
+  color:grey;
+}
+.topic{
+  display:inline-block;
+  width:300px;
+  text-align:left;
+  color:rgba(9, 48, 99, 0.682)
+}
+
+.topic-a{
+  text-align:left;
+  color:grey;
 }
 
 .current-date-time{
@@ -370,10 +464,14 @@ html, body, #root{
   background-color:#FFFFFF
 }
 
-/*
-.feature{
-  position:relative;
-}*/
+
+
+
+
+
+
+
+
 
 .App-logo {
   height: 40vmin;

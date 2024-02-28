@@ -24,8 +24,10 @@ const AboutMePage=()=>{
     return (
         <>
         <div className="container">
+        <Link to="/" className="back-button">Back to HomePage</Link>
             <div className="profile">
-                <h1>Profile</h1>
+                <h1>Yejin Kim</h1>
+                <h2>Profile</h2>
             
                 <div className="paragraph">
                 <h2>Web Developer<br/><br/></h2>
@@ -34,35 +36,42 @@ const AboutMePage=()=>{
                 I pursue a life engaged in work that I can immerse myself in, rather than 'Work-Life Balance'. <br/>I pursue completion rather than perfection and am always up for a challenge. <br/>I enjoy learning new skills and contemplating how to improve productivity.</p></h3>
                 </div>
             </div>
-            <div className="skills">
-                <div className="skills-category">
-                    <h3><span class="bold">Lang</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Javascript, HTML/CSS, Python</h3>
-                        
-                 
-                </div>
-                <div className="skills-category-1">
-                    <h3><span class="bold">Front</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; React</h3>
-                    
-                </div>
-                
-                <div className="skills-category-1">
-                    <h3><span class="bold">Back</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+            <div className="skill-container">
+                <div className="skill">
+                   <div className="bold">Lang</div> 
+                   <div className="element">Javascript, HTML/CSS, Python, C, C++</div>
                 </div>
 
-                <div className="skills-category-1">
-                    <h3><span class="bold">DB</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+                <div className="skill">
+                   <div className="bold">Front</div> 
+                   <div className="element">React, Node.js</div>
                 </div>
 
-                <div className="skills-category-1">
-                    <h3><span class="bold">IDE</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+                <div className="skill">
+                   <div className="bold">Back</div> 
+                   <div className="element">Express.js</div>
+                </div>
+                                
+                <div className="skill">
+                   <div className="bold">DB</div> 
+                   <div className="element">Oracle, MySQL, MongoDB</div>
                 </div>
 
-                <div className="skills-category-1">
-                    <h3><span class="bold">ETC</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+                <div className="skill">
+                   <div className="bold">IDE</div> 
+                   <div className="element">VSCode</div>
                 </div>
 
+                <div className="skill">
+                   <div className="bold">ETC</div> 
+                   <div className="element">Git, Jira</div>
+                </div>
             </div>
         </div>
+        
+        <div className="diagonal-section">
+  
+    </div>
         <div className="education-section">
             <h2>Education</h2>
            
@@ -102,6 +111,7 @@ const AboutMePage=()=>{
         </div>
 
         <div className="interest-container">
+            <h2>I'm interest in...</h2>
            {interest.map((interests)=>(
             <div className={`interest ${interests.level}`} key={interests.text} 
                 style={{
@@ -118,28 +128,28 @@ const AboutMePage=()=>{
     <div className="timeline-container">
         <h2>Timeline</h2>
         <div className="timeline"></div> 
-        <div className="event" style={{left:'10%'}}>
-        <div className="event-dot"></div> {/* This is the new dot */}
-            <div className="event-date">23.02.-23.04.</div>
-            <div className="event-title">HERE</div>
-            <div className="event-subtitle">Frontend</div>
-            <div className="event-desc">NFT</div>
-      </div>
-         <div className="event" style={{left:'30%'}}>
-         <div className="event-dot"></div> {/* This is the new dot */}
-            <div className="event-date">23.04.-23.05.</div>
-            <div className="event-title">HERE</div>
-            <div className="event-subtitle">Frontend</div>
-            <div className="event-desc">NFT</div>
+        <div className="timeline-a">
+            <div className="event" style={{left:'30%'}}>
+             <div className="event-dot"></div> {/*new dot*/}
+                <div className="event-date">23.05.-23.08.</div>
+                <div className="event-title">Web Project</div>
+                <div className="event-desc">A simple blog with login functionality, the ability to create new categories and posts.
+            <br/> Based on the existing data, it will render the relevant number of categories.</div>
+             </div>
+         <div className="event" style={{left:'70%'}}>
+         <div className="event-dot"></div>  {/*new dot*/}
+            <div className="event-date">23.12.-24.02.</div>
+            <div className="event-title">Personal Website</div>
+            <div className="event-desc">A simple website for an interactive resume</div>
          </div>
 
-         <div className="event" style={{left:'80%'}}>
-         <div className="event-dot"></div> {/* This is the new dot */}
-            <div className="event-date">23.08.-23.09.</div>
-            <div className="event-title">HERE</div>
-            <div className="event-subtitle">Frontend</div>
-            <div className="event-desc">NFT</div>
+         <div className="event" style={{left:'90%'}}>
+         <div className="event-dot"></div>  {/*new dot*/}
+            <div className="event-date">24.01.-24.02.</div>
+            <div className="event-title">Vocal-Activated To-Do List</div>
+            <div className="event-desc">A to-do list utilizing Azure APIs for enhanced convenience</div>
          </div>
+      </div>
     </div>
        </>
     )
