@@ -468,6 +468,32 @@ html, body, #root{
 
 
 
+/*Contact.js*/
+img {
+  width: 200px;
+  height: auto; 
+
+}
+
+.contact {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.contact > div {
+  margin-right: 20px; 
+}
+
+.email, .phone, .github {
+  display: flex; 
+  align-items: center; 
+}
+
+.email img, .phone img, .github img {
+  margin-right: 10px; 
+}
+
 
 
 
