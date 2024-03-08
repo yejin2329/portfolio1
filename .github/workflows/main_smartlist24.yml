@@ -14,6 +14,13 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      - name: Debug File Structure
+        run: |
+          cd $GITHUB_WORKSPACE
+          dir
+          dir /s
+          
+          
       - uses: actions/checkout@v4
 
       - name: Set up Node.js version
