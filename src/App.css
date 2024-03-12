@@ -365,6 +365,7 @@ html, body, #root{
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
+  padding-top:90px;
 }
 
 .project-card, .project-card2{
@@ -470,24 +471,24 @@ html, body, #root{
 
 /*Contact.js*/
 img {
-  width: 200px;
+  width: 50px;
   height: auto; 
 
 }
 
 .contact {
   display: flex; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
+  flex-direction:row;
+  justify-content: space-between;
+ 
 }
 
-.contact > div {
-  margin-right: 20px; 
-}
+
 
 .email, .phone, .github {
-  display: flex; 
-  align-items: center; 
+  flex:1;
+  align-items: center;
+  padding:10px; 
 }
 
 .email img, .phone img, .github img {
