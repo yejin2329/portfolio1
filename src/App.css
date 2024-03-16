@@ -342,7 +342,7 @@ html, body, #root{
 
 .event-dot{
   position: absolute;
-  top:-33px; 
+  top:-35px; 
   left: 50%;
   transform: translateX(-50%);
   width: 10px; 
