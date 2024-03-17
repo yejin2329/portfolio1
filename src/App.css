@@ -20,14 +20,19 @@ html, body, #root{
 
 .homeSection{
 
-  color: #f7fafb4e; 
+  color: #cdb5b54e; 
   font-size: 30px; 
   position:relative;
 }
 
 .top-section{
-  background-color:white;
+  background-color:FFFFFFF;
 
+}
+
+.top-section h2{
+  color:rgb(177, 138, 104);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .homeSection img{
@@ -44,7 +49,8 @@ html, body, #root{
   color:inherit;
   transition: transform 0.3s ease;
   cursor:pointer;
-  color: rgb(31, 98, 127);
+  color: rgb(177, 138, 104);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .menu:hover{
@@ -440,9 +446,6 @@ html, body, #root{
   right:0;
 }
 
-.top-section h2{
-  color: rgb(85, 126, 192);
-}
 
 .image-container{
   display:flex;
@@ -457,7 +460,7 @@ html, body, #root{
 }
 
 .bottom-section{
-  background-color:#97e5fb;
+  background-color:#FFFFFF;
 }
 
 .padding{
@@ -480,7 +483,9 @@ img {
   display: flex; 
   flex-direction:row;
   justify-content: space-between;
- 
+  margin-top: -250px; 
+  padding-top: 10px; 
+  position: relative;
 }
 
 
@@ -495,7 +500,11 @@ img {
   margin-right: 10px; 
 }
 
-
+.leave-comments{
+  margin-left:0px;
+  padding:0px;
+  margin-top:70px;
+}
 
 
 /*Project Page-video*/
