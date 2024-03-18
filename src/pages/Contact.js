@@ -63,7 +63,7 @@ const ContactPage=()=>{
             onChange={handleCommentChange}
             placeholder="Enter your comment here"
             />
-            <button type="submit">Post</button>
+            <button type="submit" class="submit-button">Post</button>
             </form>
 
             <div className="comment-post">
