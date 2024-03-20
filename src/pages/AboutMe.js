@@ -23,8 +23,9 @@ const getRandomValue = () => Math.random() *70; // Gives a random value between 
 const AboutMePage=()=>{
     return (
         <>
-        <div className="container">
+        <div className="aboutme-container">
         <Link to="/" className="back-button">Back to HomePage</Link>
+        
             <div className="profile">
                 <h1>Yejin Kim</h1>
                 <h2>Profile</h2>
