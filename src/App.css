@@ -79,16 +79,17 @@ html, body, #root{
 }
 
 
-.container{
+.aboutme-container{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
   min-height:80vh;
   text-align:left;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.App .container{
+.App .aboutme-container{
   justify-content:flex-start;
 }
 
@@ -99,7 +100,7 @@ html, body, #root{
   flex-direction: column;
   flex-basis: 50%; 
   max-width: 50%; 
-  font-family: 'Arial', sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
 }
 
@@ -107,12 +108,14 @@ html, body, #root{
   margin-left:40px;
   font-size: 2em;
   margin-bottom:0.5em;
+  color:darkgrey;
 }
 
 .profile h2{
   margin-left:40px;
   font-size: 1.5em;
   margin-top:0;
+  color:darkgrey;
 }
 
 .paragraph{
@@ -124,17 +127,17 @@ html, body, #root{
 
 .paragraph h3{
   margin-left:40px;
-
+ 
 }
 
 .paragraph p{
-  font-family: 'Arial', sans-serif;
+
   font-weight:normal;
-  color:grey;
+  color:darkgrey;
 }
 .paragraph h2{
   margin-left:80px;
-  color: rgb(78, 76, 76);
+  color:grey;
 }
 
 .skill-container{
@@ -181,11 +184,12 @@ html, body, #root{
   min-height:30vh;
   text-align:left;
   margin-left: 40px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .education-section h2{
   margin-top:30px;
-  font-family: 'Arial', sans-serif;
+  
   font-size: 25px;
 }
 
@@ -229,17 +233,18 @@ html, body, #root{
   text-align:left;
   margin-left: 40px;
   margin-top:50px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .course-section h2{
   margin-bottom: 30px;
-  font-family: 'Arial', sans-serif;
+ 
   font-size: 25px;
 }
 
 .course-section h3{
   margin-top:10px;
-  font-family: 'Arial', sans-serif;
+
   font-size: 15px;
   color:darkgrey;
 }
@@ -251,12 +256,13 @@ html, body, #root{
   width: 100%; /* Full width */
   margin-top: 130px;
   margin-left: 70px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .interest-container h2{
   margin-top:-50px;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+
   font-size: 25px;
 }
 .interest{
@@ -321,7 +327,7 @@ html, body, #root{
 .timeline-container h2{
   text-align: left;
   margin-left:50px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
 }
 
@@ -383,6 +389,7 @@ html, body, #root{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .project-card:hover{
@@ -400,7 +407,7 @@ html, body, #root{
   font-size: 35px;
 }
 
-.proejct-desc{
+.project-desc{
   padding:0;
   margin:0;
 }
@@ -519,7 +526,7 @@ textarea {
 
 .comment-post{
   margin-top:35px;
-  
+
 }
 /*Project Page-video*/
 .video-container {
