@@ -61,7 +61,7 @@ html, body, #root{
 .back-button{
   padding: 10px;
   margin:10px;
-  background-color: rgb(85, 126, 192);
+  background-color: rgb(177, 138, 104);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -75,7 +75,7 @@ html, body, #root{
 }
 
 .back-button:hover{
-  color: rgb(34, 90, 179);
+  color: rgb(177, 123, 76);
 }
 
 
@@ -84,7 +84,7 @@ html, body, #root{
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
-  min-height:80vh;
+  min-height:60vh;
   text-align:left;
   font-family: "Times New Roman", Times, serif;
 }
@@ -108,20 +108,19 @@ html, body, #root{
   margin-left:40px;
   font-size: 2em;
   margin-bottom:0.5em;
-  color:darkgrey;
+  color:rgb(210, 164, 119);
 }
 
 .profile h2{
-  margin-left:40px;
+  margin-left:45px;
   font-size: 1.5em;
   margin-top:0;
-  color:darkgrey;
+  color:rgb(210, 164, 119);
 }
 
 .paragraph{
   text-align:left;
-  margin-top:180px;
-  
+  margin-top:95px;
   font-size:18px;
 }
 
@@ -133,11 +132,11 @@ html, body, #root{
 .paragraph p{
 
   font-weight:normal;
-  color:darkgrey;
+  color:rgb(27, 64, 107);
 }
 .paragraph h2{
   margin-left:80px;
-  color:grey;
+  color:rgb(27, 64, 107);
 }
 
 .skill-container{
@@ -145,7 +144,7 @@ html, body, #root{
   grid-template-columns: max-content auto;
   row-gap: 30px;
   align-items:start;
-  margin-top:250px;
+  margin-top:135px;
   margin-left:100px;
 }
 
@@ -254,7 +253,7 @@ html, body, #root{
   position: relative; 
   height: 500px; 
   width: 100%; /* Full width */
-  margin-top: 130px;
+  margin-top: -30px;
   margin-left: 70px;
   font-family: "Times New Roman", Times, serif;
 }
@@ -281,7 +280,7 @@ html, body, #root{
   font-size:1em;
   width:150px;
   height: 150px;
-  background-color: #c8e6c9;
+  background-color: #f2820a;
 }
 
 .interest.high:hover{
@@ -292,6 +291,7 @@ html, body, #root{
   font-size:0.85em;
   width: 120px; 
   height: 120px;
+  background-color: #fba548;
 }
 
 .interest.medium:hover{
@@ -302,6 +302,7 @@ html, body, #root{
   font-size:0.7em;
   width: 90px; 
   height: 90px;
+  background-color: #fbc184;
 }
 
 .interest.low:hover{
@@ -326,9 +327,10 @@ html, body, #root{
 
 .timeline-container h2{
   text-align: left;
-  margin-left:50px;
+  margin-left:60px;
   font-family: "Times New Roman", Times, serif;
   font-size: 25px;
+  margin-top:30px;
 }
 
 .timeline{
@@ -354,7 +356,7 @@ html, body, #root{
 
 .event-dot{
   position: absolute;
-  top:-35px; 
+  top:-48px; 
   left: 50%;
   transform: translateX(-50%);
   width: 10px; 
@@ -378,6 +380,7 @@ html, body, #root{
   padding: 20px;
   box-sizing: border-box;
   padding-top:90px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .project-card, .project-card2{
@@ -402,8 +405,11 @@ html, body, #root{
   display:block;
 }
 
+.to-do-list{
+  color: rgb(251, 118, 1);
+}
 .to-do-list h1{
-  font-family: 'Arial', sans-serif;
+  color: rgb(177, 138, 104);
   font-size: 35px;
 }
 
@@ -480,6 +486,10 @@ html, body, #root{
 
 
 /*Contact.js*/
+.contact-container{
+  font-family: "Times New Roman", Times, serif;
+}
+
 img {
   width: 50px;
   height: auto; 
@@ -526,8 +536,12 @@ textarea {
 
 .comment-post{
   margin-top:35px;
-
 }
+
+.review{
+  font-family: "Times New Roman", Times, serif;
+}
+
 /*Project Page-video*/
 .video-container {
   position: relative;
