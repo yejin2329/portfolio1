@@ -31,10 +31,10 @@ const AboutMePage=()=>{
                 <h2>Profile</h2>
             
                 <div className="paragraph">
-                <h2>Web Developer<br/><br/></h2>
+                <h2>Web Developer | IT Anlayst | IT Help Desk Specialist <br/><br/></h2>
                <h3>
                 <p> 
-                I pursue a life engaged in work that I can immerse myself in, rather than 'Work-Life Balance'. <br/>I pursue completion rather than perfection and am always up for a challenge. <br/>I enjoy learning new skills and contemplating how to improve productivity.</p></h3>
+                I pursue a life engaged in work that I can immerse myself in. <br/>I pursue completion rather than perfection and am always up for a challenge. <br/>I enjoy learning new skills and contemplating how to improve productivity.</p></h3>
                 </div>
             </div>
             <div className="skill-container">
@@ -159,4 +159,3 @@ const AboutMePage=()=>{
 }
 
 export default AboutMePage;
-
