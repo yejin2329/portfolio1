@@ -137,6 +137,7 @@ html, body, #root{
 .paragraph h2{
   margin-left:80px;
   color:rgb(27, 64, 107);
+  text-align:left;
 }
 
 .skill-container{
