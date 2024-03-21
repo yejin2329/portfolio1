@@ -9,7 +9,7 @@ const interest=[
     {text: 'Frontend Developer', level:'high'},
     {text: 'Database', level:'high'},
     {text: 'API', level:'high'},
-    {text: 'Database', level:'medium'},
+
     {text: 'Java', level:'medium'},
     {text: 'Backend Developer', level:'medium'},
     {text: 'C', level:'low'},
@@ -18,7 +18,7 @@ const interest=[
  
 ]
 
-const getRandomValue = () => Math.random() *70; // Gives a random value between 0% and 80%
+const getRandomValue = () => Math.random() *90; // Gives a random value between 0% and 80%
 
 const AboutMePage=()=>{
     return (
@@ -67,12 +67,14 @@ const AboutMePage=()=>{
                    <div className="bold">ETC</div> 
                    <div className="element">Git, Jira</div>
                 </div>
+
             </div>
+                
         </div>
-        
-        <div className="diagonal-section">
+       
+       {/* <div className="diagonal-section">
   
-    </div>
+    </div>*/}
         <div className="education-section">
             <h2>Education</h2>
            
