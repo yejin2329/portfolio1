@@ -42,7 +42,7 @@ const ContactPage=()=>{
       
         <img src={emailIcon} alt="email" className="email"/>
               
-        Email Address: kimye232917@gmail.com
+        kimye232917@gmail.com
         </div>
         
         <div className="phone">
