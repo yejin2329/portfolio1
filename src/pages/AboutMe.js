@@ -9,9 +9,10 @@ const interest=[
     {text: 'Python', level:'high'},
     {text: 'Web Developer', level:'high'},
     {text: 'Frontend Developer', level:'high'},
+    {text: 'IT Analyst', level:'high'},
     {text: 'Database', level:'high'},
     {text: 'API', level:'high'},
-
+    
     {text: 'Java', level:'medium'},
     {text: 'Backend Developer', level:'medium'},
     {text: 'C', level:'low'},
@@ -20,60 +21,19 @@ const interest=[
  
 ]
 
-const Skill = ({ text, proficiency }) => {
-    return (
-      <div className={`skill proficiency-${proficiency}`}>
-        {text}
-      </div>
-    );
-  };
-
-const SkillLevelSelector=({onSelectLevel})=>{
-    const levels=['Beginner', 'Intermediate', 'Advanced'];
-    
-    const handleClick=(level)=>{
-        onSelectLevel(level);
-    }
-
-    return(
-        <div>
-            {levels.map((level, index)=>(
-                <button key={index} onClick={()=>handleClick(index+1)}>
-                    {level}
-                </button>
-            ))}
-        </div>
-    )
-}
 
 const getRandomValue = () => Math.random() *70; // Gives a random value between 0% and 80%
 
 const AboutMePage=()=>{
-//state for proficiency level
-const [selectedLevel, setSelectedLevel]=useState(1);
+    const [selectedProficiency, setSelectedProficiency] = useState(null);
 
-//function to handle proficiency level
-const handleSelectLevel=(level)=>{
-    setSelectedLevel(level);
-}
+    const handleProficiencyHover = (level) => {
+        console.log("Hovered proficiency level:", level);
+        setSelectedProficiency(level);
+    };
 
-//list of skills with proficiency level
-const skills=[
-    {text:"Javascript", proficiency:3},
-    {text:"HTML", proficiency:4},
-    {text:"CSS", proficiency:3},
-    {text:"React", proficiency:2},
-    {text:"Python", proficiency:2},
-    {text:"C", proficiency:2},
-    {text:"C++", proficiency:2},
-    {text:"Microsoft 365", proficiency:4},
-    {text:"Git", proficiency:2},
-    {text:"GitHub", proficiency:3},
-    {text:"Jira", proficiency:3},
-    {text:"VSCode", proficiency:4},
-    {text:"MongoDB", proficiency:2},
-    {text:"Database", proficiency:3},
-]
+
+
     return (
         <>
         <div className="aboutme-container">
@@ -87,10 +47,10 @@ const skills=[
                 <div className="sub-profile">
   <h1>I am <span class="brackets">[&nbsp;&nbsp;&nbsp;&nbsp;]</span></h1>
   <h1 className="text">
-    <span class="word">hard-working,&nbsp;</span>
-    <span class="word">fast-learner,&nbsp;</span>
+    <span class="word">hardworking,&nbsp;</span>
+    <span class="word">a fast-learner,&nbsp;</span>
     <span class="word">passionate,&nbsp;</span>
-    <span class="word">smile person,&nbsp;</span>
+    <span class="word">a smiling person,&nbsp;</span>
     <span class="word">work together</span>
   </h1>
 </div>
@@ -131,45 +91,62 @@ const skills=[
         <div className="skill-container">
                 <div className="skill">
                    <div className="bold">Lang</div> 
-                   <div className="element">Javascript, HTML/CSS, Python, C, C++</div>
+                   <div className={`element ${selectedProficiency === 3 ? 'advanced' : ''}`}>Javascript, HTML/CSS, Python, C, C++</div>
                 </div>
           
                 <div className="skill">
                    <div className="bold">Front</div> 
-                   <div className="element">React, Node.js</div>
+                   <div className={`element ${selectedProficiency === 1  ? 'advanced' : ''}`}>React, Node.js</div>
                 </div>
 
                 <div className="skill">
                    <div className="bold">Back</div> 
-                   <div className="element">Express.js</div>
+                   <div className={`element ${selectedProficiency === 2 ? 'intermediate' : ''}`}>Express.js</div>
                 </div>
                                 
                 <div className="skill">
                    <div className="bold">DB</div> 
-                   <div className="element">Oracle, MySQL, MongoDB</div>
+                   <div className={`element ${selectedProficiency === 2 ? 'intermediate' : ''}`}>Oracle, MySQL, MongoDB</div>
                 </div>
 
                 <div className="skill">
                    <div className="bold">IDE</div> 
-                   <div className="element">VSCode</div>
+                   <div className={`element ${selectedProficiency === 3 ? 'advanced' : ''}`}>VSCode</div>
                 </div>
 
                 <div className="skill">
                    <div className="bold">ETC</div> 
-                   <div className="element">Git, Jira</div>
+                   <div className={`element ${selectedProficiency === 2 ? 'intermediate' : ''}`}>Git, Jira</div>
                 </div>
             </div>
 
-       <div>
-        <SkillLevelSelector onSelectLevel={handleSelectLevel}/>
-        
-        <div className="skill-level container">
-            {skills.map((skill, index)=>(
-                  <Skill key={index} text={skill.text} proficiency={skill.proficiency} />
-            ))}
-        </div>
-       </div>
-         
+            <div className="proficiency-level-container">
+      <span
+        className="proficiency-level"
+        onMouseEnter={() => handleProficiencyHover(1)}
+        onMouseLeave={() => handleProficiencyHover(null)}
+      >
+        Beginner
+      </span>{" "}
+      |
+      <span
+        className="proficiency-level"
+        onMouseEnter={() => handleProficiencyHover(2)}
+        onMouseLeave={() => handleProficiencyHover(null)}
+      >
+        Intermediate
+      </span>{" "}
+      |
+      <span
+        className="proficiency-level"
+        onMouseEnter={() => handleProficiencyHover(3)}
+        onMouseLeave={() => handleProficiencyHover(null)}
+      >
+        Advanced
+      </span>
+    </div>
+
+
 
     <div className="course-container">
         <div className="course-section">
