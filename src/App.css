@@ -107,9 +107,9 @@ html, body, #root{
 
 .profile h1{
   margin-left:40px;
- 
   margin-bottom:0.5em;
   color:rgb(210, 164, 119);
+  
 }
 
 .profile h2{
@@ -122,6 +122,9 @@ html, body, #root{
   flex:1;
 }
 
+.profile-info h1{
+  min-width:170%;
+}
 
 .profile .profile-info h1{
   font-size:2.5em;
@@ -130,13 +133,14 @@ html, body, #root{
 .sub-profile{
   margin-top:10px;
   margin-left: 170px;
-  min-width:90%;
+  min-width:160%;
   position:relative;
 }
 
 .sub-profile h1{
-  margin-left:100px;
+  margin-left:170px;
   position:relative;
+  min-width:90%;
 }
 
 .sub-profile h1 .brackets {
@@ -290,10 +294,25 @@ html, body, #root{
   grid-template-columns: max-content auto;
   row-gap: 30px;
   align-items:start;
-  justify-content:left;
-  margin-left:100px;
-  margin-top:60px;
-  min-height:35vh;
+  justify-content:right;
+
+  margin-top: -170px;
+
+  float:right;
+  width: calc(50% - 40px);
+  margin-left: 240px;
+}
+
+.skill-container .element.beginner {
+  color: #ff0000;
+}
+
+.skill-container .element.intermediate {
+  color: #0000ff;
+}
+
+.skill-container .element.advanced {
+  color: #00ff00;
 }
 
 .skill {
@@ -317,17 +336,31 @@ html, body, #root{
   color:darkgrey;
 }
 
+.proficiency-level-container{
+  padding:0px;
+  margin-top:-250px;
+  align-items:right;
+  margin-left:850px;
+}
+
+.proficiency-level {
+  cursor: pointer;
+  color: black; 
+  text-decoration: none; 
+}
+
 
 
 /*AboutMe Page -Education*/
 .education-section{  
   padding: 20px;
-  min-height:30vh;
+  
   text-align:left;
-  margin-left: 530px;
+  margin-left:75px;
   margin-top:35px;
   font-family: "Times New Roman", Times, serif;
-  align-items:center;
+  float: left;
+  width: calc(50% - 60px); 
 }
 
 .education-section h2{
@@ -374,8 +407,8 @@ html, body, #root{
   padding: 20px;
   min-height:30vh;
   text-align:left;
-  margin-left: 40px;
-  margin-top:50px;
+  margin-left: 70px;
+  margin-top:270px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -397,13 +430,13 @@ html, body, #root{
   position: relative; 
   height: 500px; 
   width: 100%; /* Full width */
-  margin-top: -30px;
+  margin-top:220px;
   margin-left: 70px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .interest-container h2{
-  margin-top:105px;
+  margin-top: 75px;
   text-align: center;
   font-size: 25px;
 }
@@ -471,7 +504,7 @@ html, body, #root{
 
 .timeline-container h2{
   text-align: left;
-  margin-left:60px;
+  margin-left: 90px;
   font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   margin-top:30px;
