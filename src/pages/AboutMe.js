@@ -58,7 +58,7 @@ const AboutMePage=()=>{
             </div>
             <div className="content">
                 <div className="paragraph">
-                <h2>Web Developer | IT Anlayst | IT Help Desk Specialist <br/><br/></h2>
+                <h2>Web Developer | IT Analyst | IT Help Desk Specialist <br/><br/></h2>
                <h3>
                 <p> 
                 I pursue a life engaged in work that I can immerse myself in. <br/>I pursue completion rather than perfection and am always up for a challenge. <br/>I enjoy learning new skills and contemplating how to improve productivity.</p></h3>
