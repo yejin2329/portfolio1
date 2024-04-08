@@ -304,15 +304,15 @@ html, body, #root{
 }
 
 .skill-container .element.beginner {
-  color: #ff0000;
+  color: red;
 }
 
 .skill-container .element.intermediate {
-  color: #0000ff;
+  color: skyblue;
 }
 
 .skill-container .element.advanced {
-  color: #00ff00;
+  color: blue;
 }
 
 .skill {
@@ -724,6 +724,8 @@ textarea {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   overflow: hidden;
+  height:0;
+  margin-bottom:20px;
 }
 
 iframe {
@@ -734,6 +736,11 @@ iframe {
   height: 100%;
 }
 
+.update-text {
+  text-align: center; 
+  margin: 20px 0; 
+  color:rgb(177, 138, 104)
+}
 
 .App-logo {
   height: 40vmin;
