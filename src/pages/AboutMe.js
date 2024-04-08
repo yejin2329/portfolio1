@@ -96,7 +96,7 @@ const AboutMePage=()=>{
           
                 <div className="skill">
                    <div className="bold">Front</div> 
-                   <div className={`element ${selectedProficiency === 1  ? 'advanced' : ''}`}>React, Node.js</div>
+                   <div className={`element ${selectedProficiency === 1  ? 'beginner' : ''}`}>React, Node.js</div>
                 </div>
 
                 <div className="skill">
