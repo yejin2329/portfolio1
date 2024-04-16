@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import screenshot1 from "../images/to_do_list sample2.png";
+import screenshot1 from "../images/to_do_list sample3.png";
 import VideoPlayer from "./VideoPlayer";
 
 const ProjectPage=()=>{
