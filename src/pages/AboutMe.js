@@ -68,7 +68,7 @@ const AboutMePage=()=>{
                 
         </div>
        
-      
+      <div className="container1">
         <div className="education-section">
             <h2>Education</h2>
            
@@ -86,6 +86,34 @@ const AboutMePage=()=>{
            
 
         </div>
+
+        <div className="proficiency-level-container">
+      <span
+        className="proficiency-level"
+        onMouseEnter={() => handleProficiencyHover(1)}
+        onMouseLeave={() => handleProficiencyHover(null)}
+      >
+        Beginner
+      </span>{" "}
+      |
+      <span
+        className="proficiency-level"
+        onMouseEnter={() => handleProficiencyHover(2)}
+        onMouseLeave={() => handleProficiencyHover(null)}
+      >
+        Intermediate
+      </span>{" "}
+      |
+      <span
+        className="proficiency-level"
+        onMouseEnter={() => handleProficiencyHover(3)}
+        onMouseLeave={() => handleProficiencyHover(null)}
+      >
+        Advanced
+      </span>
+    </div>
+
+
 
 
         <div className="skill-container">
@@ -119,35 +147,8 @@ const AboutMePage=()=>{
                    <div className={`element ${selectedProficiency === 2 ? 'intermediate' : ''}`}>Git, Jira</div>
                 </div>
             </div>
-
-            <div className="proficiency-level-container">
-      <span
-        className="proficiency-level"
-        onMouseEnter={() => handleProficiencyHover(1)}
-        onMouseLeave={() => handleProficiencyHover(null)}
-      >
-        Beginner
-      </span>{" "}
-      |
-      <span
-        className="proficiency-level"
-        onMouseEnter={() => handleProficiencyHover(2)}
-        onMouseLeave={() => handleProficiencyHover(null)}
-      >
-        Intermediate
-      </span>{" "}
-      |
-      <span
-        className="proficiency-level"
-        onMouseEnter={() => handleProficiencyHover(3)}
-        onMouseLeave={() => handleProficiencyHover(null)}
-      >
-        Advanced
-      </span>
-    </div>
-
-
-
+            </div>
+    {/*
     <div className="course-container">
         <div className="course-section">
         <h2>Course taken</h2>
@@ -168,7 +169,7 @@ const AboutMePage=()=>{
         <h3>CPR101: Computer Principles for Programmers</h3>
         <h3>ULI101: Introduction to UNIX/LINUX and the Internet</h3>
         </div>
-
+    */}
         <div className="interest-container">
             <h2>I'm interest in...</h2>
            {interest.map((interests)=>(
@@ -182,7 +183,7 @@ const AboutMePage=()=>{
                 </div>
            ))}
         </div>
-    </div>
+  
     
     <div className="timeline-container">
         <h2>Timeline</h2>
