@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import screenshot1 from "../images/to_do_list sample5.png";
+import screenshot2 from "../images/to_do_list sample6.png";
+import screenshot3 from "../images/to_do_list sample7.png";
 import VideoPlayer from "./VideoPlayer";
 
 const ProjectPage=()=>{
@@ -13,6 +15,18 @@ const ProjectPage=()=>{
                 <div className="project-image">
                 <img src={screenshot1} alt="project_sample" className="project_sample"/>
                 </div>
+
+                <div className="project-image">
+                <img src={screenshot2} alt="project_sample" className="project_sample"/>
+                </div>
+
+                <div className="project-image">
+                <img src={screenshot3} alt="project_sample" className="project_sample"/>
+                </div>
+
+
+
+
                 <div className="project-desc">
                     <h1>Description: Utilizing two Azure APIs; Speech-to-Text API and Key Phrase Extraction API - enables users to efficiently manage their to-do lists verbally </h1>
                     <p>
