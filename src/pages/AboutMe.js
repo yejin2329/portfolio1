@@ -198,14 +198,14 @@ const AboutMePage=()=>{
              </div>
          <div className="event" style={{left:'70%'}}>
          <div className="event-dot"></div>  {/*new dot*/}
-            <div className="event-date">23.12.-24.03.</div>
+            <div className="event-date">23.12.-24.04.</div>
             <div className="event-title">Personal Website</div>
             <div className="event-desc">A simple website for an interactive resume</div>
          </div>
 
          <div className="event" style={{left:'90%'}}>
          <div className="event-dot"></div>  {/*new dot*/}
-            <div className="event-date">24.01.-24.03.</div>
+            <div className="event-date">24.01.-24.04.</div>
             <div className="event-title">Vocal-Activated To-Do List</div>
             <div className="event-desc">A to-do list utilizing Azure APIs for enhanced convenience</div>
          </div>
