@@ -31,7 +31,7 @@ const ProjectPage=()=>{
                     <h1>Description: Utilizing two Azure APIs; Speech-to-Text API and Key Phrase Extraction API - enables users to efficiently manage their to-do lists verbally </h1>
                     <p>
                         <span class="topic">Project Duration </span>
-                        <span class="topic-a">024.01.30~2024.02.22 </span>
+                        <span class="topic-a">2024.01.30~2024.04.30 </span>
                     </p>
 
                     <p>
