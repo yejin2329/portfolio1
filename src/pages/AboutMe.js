@@ -191,28 +191,28 @@ const AboutMePage=()=>{
         <div className="timeline-a">
             <div className="event" style={{left:'30%'}}>
              <div className="event-dot"></div> {/*new dot*/}
-                <div className="event-date">23.05.-23.08.</div>
+                <div className="event-date">May 2023-Aug 2023</div>
                 <div className="event-title">Web Project</div>
                 <div className="event-desc">A simple blog with login functionality, the ability to create new categories and posts.
             <br/> Based on the existing data, it will render the relevant number of categories.</div>
              </div>
          <div className="event" style={{left:'50%'}}>
          <div className="event-dot"></div>  {/*new dot*/}
-            <div className="event-date">23.12.-24.04.</div>
+            <div className="event-date">Dec 2023-Apr 2024</div>
             <div className="event-title">Personal Website</div>
             <div className="event-desc">A simple website for an interactive resume</div>
          </div>
 
          <div className="event" style={{left:'70%'}}>
          <div className="event-dot"></div>  {/*new dot*/}
-            <div className="event-date">24.01.-24.04.</div>
+            <div className="event-date">Jan 2024-Apr 2024</div>
             <div className="event-title">Vocal-Activated To-Do List</div>
             <div className="event-desc">A to-do list utilizing Azure APIs for enhanced convenience</div>
          </div>
 
          <div className="event" style={{left:'90%'}}>
          <div className="event-dot"></div>  {/*new dot*/}
-            <div className="event-date">24.05.-present</div>
+            <div className="event-date">May 2024-present</div>
             <div className="event-title">Weather Outfit Recommender</div>
             <div className="event-desc">Implemented an algorithm to recommend outfits to users based on weather conditions and their preset outfit settings</div>
          
