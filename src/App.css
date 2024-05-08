@@ -578,6 +578,10 @@ p, .skill, .course-section, .interest-container {
   margin-bottom: 5px;
 }
 
+.event-title{
+  font-weight:bold;
+}
+
 .event-desc{
   margin-bottom: 40px;
 }
