@@ -77,18 +77,7 @@ const ProjectPage=()=>{
          
         
             </div>
-            {/*
-            <div className="project-card2">
-            <div className="project2">
-                coming soon...
-                <br/>coming soon....
-                <br/>coming soon....
-                <br/>coming soon....
-                <br/>coming soon....
-                <br/>coming soon....
-            </div>
-    </div> */}
-
+          
             <VideoPlayer/>
         </div>
     )
